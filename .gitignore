@@ -1,1 +1,3 @@
 pySOT2.egg-info/*
+pySOT2/example_simple.py
+pySOT2/__pycache__
