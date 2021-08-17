@@ -82,6 +82,7 @@ def epsilon_ND_Add(F, df_index, ndf_index, box_index, e):
     (M, l) = F.shape
     l = int(l - 1)
     # python 2 to 3 update
+    # range need to be converted to list type
     df_index = list(df_index)
     ndf_index = list(ndf_index)
     box_index = list(box_index)
