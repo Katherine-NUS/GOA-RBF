@@ -7,3 +7,5 @@ MOoptimize(data)
 
 # Parallel GOMORS
 MOoptimize(data, run='asynchronous')
+
+#new
