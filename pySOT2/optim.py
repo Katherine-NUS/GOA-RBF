@@ -8,7 +8,7 @@ from pySOT.strategy import DYCORSStrategy
 from pySOT.surrogate import CubicKernel, LinearTail, RBFInterpolant
 
 
-def optimize(f, max_evals=200, num_runs=5, num_threads=1, run='serial', surrogate=None, exp_design=None):
+def optimize(f, max_evals=200, num_runs=1, num_threads=1, run='serial', surrogate=None, exp_design=None):
 
     if surrogate is None:
         surrogate = RBFInterpolant(dim=f.dim, lb=f.lb, ub=f.ub,
