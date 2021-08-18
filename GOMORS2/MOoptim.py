@@ -8,6 +8,7 @@ from GOMORS2.pySOT1.kernels import CubicKernel
 from GOMORS2.pySOT1.tails import LinearTail
 from poap.controller import SerialController, ThreadController, BasicWorkerThread
 
+
 # TODO: do multiple runs, decide how to take the final optimal value and point
 def MOoptimize(data, max_evals=200, epsilons=[0.05, 0.05], num_runs=1, num_threads=1, nsamples=1, run='serial',
                surrogate=None, exp_design=None, sampling_method=None, archiving_method=None):
@@ -31,6 +32,7 @@ def MOoptimize(data, max_evals=200, epsilons=[0.05, 0.05], num_runs=1, num_threa
             def merit(r):
                 return r.value[0]
             result = controller.run(merit=merit)
+            print("Trial Number:" + str(i))
             print("Best value found: {0}".format(result.value))
     elif run == 'asynchronous' or 'synchronous':
         # Create a strategy and a controller
@@ -48,6 +50,7 @@ def MOoptimize(data, max_evals=200, epsilons=[0.05, 0.05], num_runs=1, num_threa
             def merit(r):
                 return r.value[0]
             result = controller.run(merit=merit)
+            print("Trial Number:" + str(i))
             print("Best value found: {0}".format(result.value))
     else:
         print("No such method!")
