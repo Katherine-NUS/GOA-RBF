@@ -32,6 +32,9 @@ def epsMOoptimize(data, max_evals=200, epsilons=[0.05, 0.05], num_runs=1, num_th
             result = controller.run(merit=merit)
             print("Trial Number:" + str(i))
             print("Best value found: {0}".format(result.value))
+            print('Best solution found: {0}\n'.format(
+                np.array_str(result.params[0], max_line_width=np.inf,
+                             precision=5, suppress_small=True)))
     elif run == 'asynchronous' or 'synchronous':
         for i in range(num_runs):
             controller = ThreadController()
@@ -52,6 +55,9 @@ def epsMOoptimize(data, max_evals=200, epsilons=[0.05, 0.05], num_runs=1, num_th
             result = controller.run(merit=merit)
             print("Trial Number:" + str(i))
             print("Best value found: {0}".format(result.value))
+            print('Best solution found: {0}\n'.format(
+                np.array_str(result.params[0], max_line_width=np.inf,
+                             precision=5, suppress_small=True)))
     else:
         print("No such method!")
 
