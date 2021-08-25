@@ -5,6 +5,28 @@ The easiest way to install pySOT2 is through pip in which case the following com
 ```
 pip install pySOT2
 ```
+## Running pySOT2
+This repository aims to provide fast implementation of optimization algorithms, in the meantime, it also provides many parameters so users can easily adjust the algorithms accordingly. To run this repository, users can first define the optimzation problems and choose an optimizor which will return the best solutions and its corresponding function value.The "examples" folder provide sample codes for all the softwares included.<br>
+1. For single objective optimization problems, DYCORS(in pySOT) is recommended:
+ ```
+from pySOT2.Optimize import Optim
+Optim.optimize(problem)
+```
+2. For multi-objective optimization problems, GOMORS is recommended:
+```
+from pySOT2.Optimize import MOoptim
+MOoptim.MOoptimize(problem)
+```
+3. For many-objective(more than 3) optimization problems, 𝜀-MaSO is recommended:
+```
+from pySOT2.Optimize import epsMOoptim
+epsMOoptim.epsMOoptimize(problem)
+```
+4. For parallel optimization on high dimensional problems, GOPS is recommended:
+```
+from pySOT2.Optimize import GOPSoptim
+GOPSoptim.GOPSoptimize(problem)
+```
 ## Citation
 If you use pySOT, please cite the following paper: [David Eriksson, David Bindel, Christine A. Shoemaker. pySOT and POAP: An event-driven asynchronous framework for surrogate optimization. arXiv preprint arXiv:1908.00420, 2019](https://arxiv.org/abs/1908.00420)<br>
 If you use GOMORS, please cite the following paper: [Akhtar, T., Shoemaker, C.A. Multi objective optimization of computationally expensive multi-modal functions with RBF surrogates and multi-rule selection. J Glob Optim 64, 17–32 (2016).](https://link.springer.com/article/10.1007/s10898-015-0270-y#citeas)<br>
