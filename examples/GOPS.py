@@ -1,5 +1,5 @@
-from GOPS2.GOPSoptim import GOPSoptimize
-from GOPS2.BBOB import BBOB
+from pySOT2.Optimize import GOPSoptim
+from pySOT2.GOPS2.BBOB import BBOB
 
 data = BBOB(id=15, instance=0, dim=40)
-GOPSoptimize(data)
+GOPSoptim.GOPSoptimize(data)
