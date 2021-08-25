@@ -6,7 +6,7 @@ The easiest way to install pySOT2 is through pip in which case the following com
 pip install pySOT2
 ```
 ## Running pySOT2
-This repository aims to provide fast implementation of optimization algorithms, in the meantime, it also provides many parameters so users can easily adjust the algorithms accordingly. To run this repository, users can first define the optimzation problems and choose an optimizor which will return the best solutions and its corresponding function value.The "examples" folder provide sample codes for all the softwares included.<br>
+This repository aims to provide fast implementation of optimization algorithms, in the meantime, it also provides many parameters so users can easily adjust the algorithms accordingly. To run this repository, users need first define the optimzation problems and choose an optimizor which will return the best solutions and its corresponding function value.The "examples" folder provide sample codes for all the softwares included and the "pySOT2\Optimizae" folder provides the source code for all the optimizors.<br>
 1. For single objective optimization problems, DYCORS(in pySOT) is recommended:
  ```
 from pySOT2.Optimize import Optim
