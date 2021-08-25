@@ -27,6 +27,11 @@ def optimize(f, max_evals=200, num_runs=1, num_threads=1, run='serial', surrogat
             result = controller.run()
             results[:, i] = np.array(
                 [o.value for o in controller.fevals if o.value is not None])
+            print("Trial Number:" + str(i))
+            print("Best value found: {0}".format(result.value))
+            print('Best solution found: {0}\n'.format(
+                np.array_str(result.params[0], max_line_width=np.inf,
+                             precision=5, suppress_small=True)))
     elif run == 'asynchronous':
         # Create a strategy and a controller
         for i in range(num_runs):
@@ -42,6 +47,11 @@ def optimize(f, max_evals=200, num_runs=1, num_threads=1, run='serial', surrogat
             result = controller.run()
             results[:, i] = np.array(
                 [o.value for o in controller.fevals if o.value is not None])
+            print("Trial Number:" + str(i))
+            print("Best value found: {0}".format(result.value))
+            print('Best solution found: {0}\n'.format(
+                np.array_str(result.params[0], max_line_width=np.inf,
+                             precision=5, suppress_small=True)))
     elif run == 'synchronous':
         for i in range(num_runs):
             controller = ThreadController()
@@ -57,12 +67,12 @@ def optimize(f, max_evals=200, num_runs=1, num_threads=1, run='serial', surrogat
             result = controller.run()
             results[:, i] = np.array(
                 [o.value for o in controller.fevals if o.value is not None])
+            print("Trial Number:" + str(i))
+            print("Best value found: {0}".format(result.value))
+            print('Best solution found: {0}\n'.format(
+                np.array_str(result.params[0], max_line_width=np.inf,
+                             precision=5, suppress_small=True)))
     else:
         print("No such method!")
 
-    fvals = np.minimum.accumulate(results)
-    # TODO: take mean value of n runs as the final optimal value or the min of n runs? If take mean value, how to decide
-    #  the optimal point
-    optif = np.mean(fvals[-1, :])
-    print("Best value found: {0}".format(optif))
 

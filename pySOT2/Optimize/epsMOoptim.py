@@ -1,9 +1,9 @@
-from .gomors_sync_strategies import MoSyncStrategyNoConstraints
-from .gomors_adaptive_sampling import *
+from pySOT2.epsMaSO2.gomors_sync_strategies import MoSyncStrategyNoConstraints
+from pySOT2.epsMaSO2.gomors_adaptive_sampling import *
 from pySOT.surrogate import CubicKernel, LinearTail, RBFInterpolant
 from pySOT.experimental_design import SymmetricLatinHypercube, LatinHypercube
 from poap.controller import SerialController, ThreadController, BasicWorkerThread
-from .archiving_strategies import NonDominatedArchive, EpsilonArchive
+from pySOT2.epsMaSO2.archiving_strategies import NonDominatedArchive, EpsilonArchive
 import numpy as np
 
 

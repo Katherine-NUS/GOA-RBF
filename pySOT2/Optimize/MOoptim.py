@@ -1,15 +1,14 @@
 import numpy as np
-from GOMORS2.gomors_sync_strategies import MoSyncStrategyNoConstraints
-from GOMORS2.gomors_adaptive_sampling import EvolutionaryAlgorithm
-from GOMORS2.archiving_strategies import NonDominatedArchive, EpsilonArchive
-from GOMORS2.pySOT1.experimental_design import SymmetricLatinHypercube
-from GOMORS2.pySOT1.rbf import RBFInterpolant
-from GOMORS2.pySOT1.kernels import CubicKernel
-from GOMORS2.pySOT1.tails import LinearTail
+from pySOT2.GOMORS2.gomors_sync_strategies import MoSyncStrategyNoConstraints
+from pySOT2.GOMORS2.gomors_adaptive_sampling import EvolutionaryAlgorithm
+from pySOT2.GOMORS2.archiving_strategies import EpsilonArchive
+from pySOT2.pySOT1.experimental_design import SymmetricLatinHypercube
+from pySOT2.pySOT1.rbf import RBFInterpolant
+from pySOT2.pySOT1.kernels import CubicKernel
+from pySOT2.pySOT1.tails import LinearTail
 from poap.controller import SerialController, ThreadController, BasicWorkerThread
 
 
-# TODO: do multiple runs, decide how to take the final optimal value and point
 def MOoptimize(data, max_evals=200, epsilons=[0.05, 0.05], num_runs=1, num_threads=1, nsamples=1, run='serial',
                surrogate=None, exp_design=None, sampling_method=None, archiving_method=None):
 
