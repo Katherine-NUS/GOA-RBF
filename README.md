@@ -1,7 +1,7 @@
 # Surrogate Optimization Algorithms for Expensive Global Optimization Problems
 This repository is an optimization toolbox for computationally expensive global optimization problems. This toolbox supports multiple surrogate optimization softwares including: Python Surrogate Optimization Toolbox ([pySOT](https://github.com/dme65/pySOT)), Gap Optimized Multi-objective Optimization using Response Surfaces ([GOMORS](https://github.com/drkupi/GOMORS_pySOT)), 𝜀-dominance Many-objective Surrogate-assisted Optimization(𝜀-MaSO) and Global Optimization in Parallel with Surrogate ([GOPS](https://github.com/louisXW/GOPS)). All optimization algorithms can be used in serial, synchronous parallel, and asynchronous parallel and we support both continuous and integer variables.<br>
 ## Installation
-The easiest way to install pySOT is through pip in which case the following command should suffice:
+The easiest way to install pySOT2 is through pip in which case the following command should suffice:
 ```
 pip install pySOT2
 ```
