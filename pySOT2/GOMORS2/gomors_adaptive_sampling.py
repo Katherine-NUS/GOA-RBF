@@ -8,9 +8,9 @@
 """
 
 import math
-from .pySOT1.utils import *
+from ..pySOT1.utils import *
 import scipy.spatial as scp
-from .pySOT1.heuristic_methods import GeneticAlgorithm as GA
+from ..pySOT1.heuristic_methods import GeneticAlgorithm as GA
 from scipy.optimize import minimize
 import scipy.stats as stats
 import types

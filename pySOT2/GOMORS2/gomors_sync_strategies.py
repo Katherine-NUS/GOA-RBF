@@ -12,11 +12,11 @@ from __future__ import print_function
 import numpy as np
 import math
 import logging
-from .pySOT1.experimental_design import SymmetricLatinHypercube, LatinHypercube
+from ..pySOT1.experimental_design import SymmetricLatinHypercube, LatinHypercube
 from poap.strategy import BaseStrategy, RetryStrategy
-from .pySOT1.rbf import *
-from .pySOT1.utils import *
-from .pySOT1.rs_wrappers import *
+from ..pySOT1.rbf import *
+from ..pySOT1.utils import *
+from ..pySOT1.rs_wrappers import *
 import time
 import random
 

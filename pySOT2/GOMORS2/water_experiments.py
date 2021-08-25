@@ -1,7 +1,7 @@
 from .gomors_sync_strategies import MoSyncStrategyNoConstraints
 from .gomors_adaptive_sampling import *
 from .test_problems import *
-from .pySOT1 import SymmetricLatinHypercube, RBFInterpolant, CubicKernel, \
+from ..pySOT1 import SymmetricLatinHypercube, RBFInterpolant, CubicKernel, \
     LinearTail
 from poap.controller import SerialController, ThreadController, BasicWorkerThread
 from .archiving_strategies import NonDominatedArchive, EpsilonArchive
