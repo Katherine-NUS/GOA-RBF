@@ -9,7 +9,7 @@ from poap.controller import ThreadController, BasicWorkerThread
 
 
 # only parallel optimization
-def GOPSoptimize(data, max_evals=200, num_runs=1, ncenters=64, nsamples=1,
+def optimize(data, max_evals=200, num_runs=1, ncenters=64, nsamples=1,
                surrogate=None, exp_design=None, sampling_method=None):
 
     if surrogate is None:

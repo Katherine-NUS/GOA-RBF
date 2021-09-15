@@ -1,12 +1,12 @@
 from pySOT.optimization_problems import Ackley
-from pySOT2.Optimize import Optim
+from pySOT2.optimize import surrogate_optimization
 
 # Serial DYCORS as the default optimizor
 ackley = Ackley(dim=10)
-Optim.optimize(ackley)
+surrogate_optimization.optimize(ackley)
 
 # asynchronous optimization
-#Optim.optimize(ackley, run='asynchronous')
+#surrogate_optimization.optimize(ackley, run='asynchronous')
 
 # synchronous optimization
-#Optim.optimize(ackley, run='synchronous')
+#surrogate_optimization.optimize(ackley, run='synchronous')

@@ -477,7 +477,7 @@ class myGUI(QtWidgets.QWidget):
         self.rsclist.show()
 
         # Optimization button
-        self.optimizebtn = QtWidgets.QPushButton('Optimize', self)
+        self.optimizebtn = QtWidgets.QPushButton('optimize', self)
         self.optimizebtn.setStyleSheet("background-color: silver")
         self.optimizebtn.clicked.connect(self.optimizeActivated)
         self.optimizebtn.move(10, 420)
@@ -1155,7 +1155,7 @@ class myGUI(QtWidgets.QWidget):
                 self.turnActionsOn()
                 return
 
-            # Optimize
+            # optimize
             try:
                 self.stopbtn.setEnabled(True)
 

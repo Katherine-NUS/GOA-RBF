@@ -7,7 +7,7 @@ from pySOT2.epsMaSO2.archiving_strategies import NonDominatedArchive, EpsilonArc
 import numpy as np
 
 
-def epsMOoptimize(data, max_evals=200, epsilons=[0.05, 0.05], num_runs=1, num_threads=1, nsamples=1, run='serial',
+def optimize(data, max_evals=200, epsilons=[0.05, 0.05], num_runs=1, num_threads=1, nsamples=1, run='serial',
                surrogate=None, exp_design=None, sampling_method=None, archiving_method=None):
 
     if surrogate is None:
