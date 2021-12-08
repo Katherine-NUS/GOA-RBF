@@ -1,16 +1,16 @@
-# Surrogate Optimization Algorithms for Expensive Global Optimization Problems
+# RBF and ANN Global Surrogate Optimization Codes and Papers
 This repository is a collection of optimization toolboxes for computationally expensive global optimization problems. This toolbox supports multiple surrogate optimization softwares including: Python Surrogate Optimization Toolbox ([pySOT](https://github.com/dme65/pySOT)), Gap Optimized Multi-objective Optimization using Response Surfaces ([GOMORS](https://github.com/drkupi/GOMORS_pySOT)), 𝜀-dominance Many-objective Surrogate-assisted Optimization(𝜀-MaSO),Global Optimization in Parallel with Surrogate ([GOPS](https://github.com/louisXW/GOPS)) and multi-fidelity RBF (radial basis function) surrogate-based optimization (MRSO). pySOT supports both continuous and integer variables; however, the other algorithms are focused on continuous variables in both their papers and codes. For mixed-integer optimization, there is a repository which is specifically focused on mixed-integer optimization and machine learning, please refer to [HORD](https://github.com/ilija139/HORD).<br>
 
 The table below gives the key features and the reference link for each algorithm, for more detailed instruction, please refer to "Running pySOT2" and for full references, please refer to "Citation". The algorithm mentioned below all uses radial basis functions as surrogate models to perform optimization and they perform very well on expensive black-box objdctive functions.
 
-| Feature | Algorithm | Reference |
+| Feature | Algorithm | GitHub Link | Authors | Reference Link
 | --- | --- | --- |
-| serial/parallel single-objective optimization| DYCORS (pySOT)| https://arxiv.org/abs/1908.00420 |
-| serial/parallel multi-objective optimization | GOMORS | https://doi.org/10.1007/s10898-015-0270-y |
-| serial/parallel many-objective optimization | 𝜀-MaSO | https://doi.org/10.1007/s10898-021-01019-w |
-| parallel single-objective optimization | GOPS | https://doi.org/10.1007/s11081-020-09556-1 |
-| serial/parallel multi-fidelity optimization | MRSO | https://doi.org/10.1007/s00158-020-02575-7 |
-| serial/parallel mixed-integer optimization| HORD| https://arxiv.org/pdf/1607.08316.pdf |
+| serial/parallel single-objective optimization| DYCORS (pySOT)| https://github.com/dme65/pySOT | David Eriksson, David Bindel, Christine A. Shoemaker | https://arxiv.org/abs/1908.00420 |
+| serial/parallel multi-objective optimization | GOMORS | https://github.com/drkupi/GOMORS_pySOT | Akhtar, T., Shoemaker, C.A. |https://doi.org/10.1007/s10898-015-0270-y |
+| serial/parallel many-objective optimization | 𝜀-MaSO | None | Wang, W., Akhtar, T. & Shoemaker, C.A. | https://doi.org/10.1007/s10898-021-01019-w |
+| parallel single-objective optimization | GOPS | https://github.com/louisXW/GOPS | Xia, W., Shoemaker, C. | https://doi.org/10.1007/s11081-020-09556-1 |
+| serial/parallel multi-fidelity optimization | MRSO | None | Yi, J., Shen, Y. & Shoemaker, C.A. |https://doi.org/10.1007/s00158-020-02575-7 |
+| serial/parallel mixed-integer optimization| HORD| https://github.com/ilija139/HORD | Ilievski, Ilija, Taimoor Akhtar, Jiashi Feng, and Christine Annette Shoemaker. | https://arxiv.org/pdf/1607.08316.pdf |
 
 ## Installation
 The easiest way to install pySOT2 is through pip in which case the following command should suffice:
