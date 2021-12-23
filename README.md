@@ -5,6 +5,7 @@ The table below gives the key features and the reference link for each algorithm
 
 | Feature | Algorithm | GitHub Link | Authors | Reference Link |
 | --- | --- | --- | --- | --- |
+| optimization algorithm collection| pySOT | [pySOT](https://github.com/dme65/pySOT) | David Eriksson, David Bindel, Christine A. Shoemaker | https://arxiv.org/abs/1908.00420|
 | serial/parallel single-objective optimization| DYCORS | [pySOT](https://github.com/dme65/pySOT) | Rommel G Regis and Christine A Shoemaker | https://doi.org/10.1080/0305215X.2012.687731 |
 | serial/parallel multi-objective optimization | GOMORS | [GOMORS](https://github.com/drkupi/GOMORS_pySOT) | Akhtar, T., Shoemaker, C.A. |https://doi.org/10.1007/s10898-015-0270-y |
 | serial/parallel many-objective optimization | 𝜀-MaSO | None | Wang, W., Akhtar, T. & Shoemaker, C.A. | https://doi.org/10.1007/s10898-021-01019-w |
