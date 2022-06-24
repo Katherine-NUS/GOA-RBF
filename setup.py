@@ -10,7 +10,7 @@ setup(
     license="LICENSE.rst",
     author=".,.",
     author_email=",.,.",
-    description="A Collection of Global Optimization Algorithms with RBF Surrogates",
+    description="Global Optimization Algorithms with RBF Surrogates",
     long_description=long_description,
     setup_requires=["numpy"],
     install_requires=["pysot"],
