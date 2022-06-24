@@ -1,4 +1,4 @@
-# Surrogate Optimization Algorithms for Expensive Global Optimization Problems
+# Global Optimization Algorithms with RBF Surrogates
 This repository is a collection of optimization toolboxes for computationally expensive global optimization problems. This toolbox supports multiple surrogate optimization softwares including: Python Surrogate Optimization Toolbox ([pySOT](https://github.com/dme65/pySOT)), Gap Optimized Multi-objective Optimization using Response Surfaces ([GOMORS](https://github.com/drkupi/GOMORS_pySOT)), 𝜀-dominance Many-objective Surrogate-assisted Optimization(𝜀-MaSO),Global Optimization in Parallel with Surrogate ([GOPS](https://github.com/louisXW/GOPS)) and multi-fidelity RBF (radial basis function) surrogate-based optimization (MRSO). All the algorithms supports both continuous and integer variables. There is also a repository which is based on pySOT specifically focused on mixed-integer optimization and machine learning, please refer to [HORD](https://github.com/ilija139/HORD).<br>
 
 ## Installation
