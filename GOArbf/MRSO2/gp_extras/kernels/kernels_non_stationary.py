@@ -10,8 +10,8 @@ from scipy.special import gamma, kv
 
 from sklearn.cluster import KMeans
 from sklearn.metrics.pairwise import pairwise_kernels
-from pySOT2.MRSO2.gpr import GaussianProcessRegressor
-from pySOT2.MRSO2.kernels import Kernel, _approx_fprime, Hyperparameter, RBF
+from GOArbf.MRSO2.gpr import GaussianProcessRegressor
+from GOArbf.MRSO2.kernels import Kernel, _approx_fprime, Hyperparameter, RBF
 
 
 class ManifoldKernel(Kernel):

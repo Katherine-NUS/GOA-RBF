@@ -1,5 +1,5 @@
-from pySOT2.epsMaSO2.multiobjective_problems import DTLZ2
-from pySOT2.optimize import many_objective
+from GOArbf.epsMaSO2.multiobjective_problems import DTLZ2
+from GOArbf.optimize import many_objective
 
 data = DTLZ2(dim=10, nobj=2)
 # Serial

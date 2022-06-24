@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 long_description = open("README.rst").read()
 
 setup(
-    name="pySOT2",
+    name="GOArbf",
     version="0.0.1",
     packages=find_packages(),
     url="https://github.com/Katherine-NUS/user-freindly",

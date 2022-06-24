@@ -1,5 +1,5 @@
 from poap.controller import ThreadController, BasicWorkerThread
-from pySOT2.MRSO2.MFO_main import *
+from GOArbf.MRSO2.MFO_main import *
 
 
 def optimize(data, mfo_method_index=0, data_mining_index=0, runs=1, n_threads=1):

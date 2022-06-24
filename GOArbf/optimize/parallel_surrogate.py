@@ -1,10 +1,10 @@
 import numpy as np
-from pySOT2.GOPS2.gops_hybrid_strategies import SyncGOPSNoConstraints
-from pySOT2.pySOT1.experimental_design import SymmetricLatinHypercube
-from pySOT2.pySOT1.rbf import RBFInterpolant
-from pySOT2.pySOT1.kernels import CubicKernel
-from pySOT2.pySOT1.tails import LinearTail
-from pySOT2.pySOT1.adaptive_sampling import CandidateDYCORS
+from GOArbf.GOPS2.gops_hybrid_strategies import SyncGOPSNoConstraints
+from GOArbf.pySOT1.experimental_design import SymmetricLatinHypercube
+from GOArbf.pySOT1.rbf import RBFInterpolant
+from GOArbf.pySOT1.kernels import CubicKernel
+from GOArbf.pySOT1.tails import LinearTail
+from GOArbf.pySOT1.adaptive_sampling import CandidateDYCORS
 from poap.controller import ThreadController, BasicWorkerThread
 
 

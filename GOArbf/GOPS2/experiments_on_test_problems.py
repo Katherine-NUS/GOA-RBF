@@ -1,9 +1,9 @@
 from .gops_hybrid_strategies import SyncGOPSNoConstraints
-from pySOT2.pySOT1 import SymmetricLatinHypercube
-from pySOT2.pySOT1 import RBFInterpolant
-from pySOT2.pySOT1 import CubicKernel
-from pySOT2.pySOT1.tails import LinearTail
-from pySOT2.pySOT1 import CandidateDYCORS
+from GOArbf.pySOT1 import SymmetricLatinHypercube
+from GOArbf.pySOT1 import RBFInterpolant
+from GOArbf.pySOT1 import CubicKernel
+from GOArbf.pySOT1.tails import LinearTail
+from GOArbf.pySOT1 import CandidateDYCORS
 from poap.controller import ThreadController, BasicWorkerThread
 import numpy as np
 import os.path

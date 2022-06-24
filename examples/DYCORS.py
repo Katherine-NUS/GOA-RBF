@@ -1,5 +1,5 @@
 from pySOT.optimization_problems import Ackley
-from pySOT2.optimize import surrogate_optimization
+from GOArbf.optimize import surrogate_optimization
 
 # Serial DYCORS as the default optimizor
 ackley = Ackley(dim=10)
