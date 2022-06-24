@@ -6,8 +6,8 @@ The easiest way to install GOArbf is through pip in which case the following com
 ```
 pip install GOArbf
 ```
-## Running pySOT2
-This repository aims to provide fast implementation of optimization algorithms, in the meantime, it also provides many parameters so users can easily adjust the algorithms accordingly. To run this repository, users need first define the optimization problems and choose an optimizer which will return the best solutions and its corresponding function value.The "examples" folder provide sample codes for all the software included and the "pySOT2\Optimize" folder provides the source code for all the optimizers.<br>
+## Running GOArbf
+This repository aims to provide fast implementation of optimization algorithms, in the meantime, it also provides many parameters so users can easily adjust the algorithms accordingly. To run this repository, users need first define the optimization problems and choose an optimizer which will return the best solutions and its corresponding function value.The "examples" folder provide sample codes for all the software included and the "GOArbf\Optimize" folder provides the source code for all the optimizers.<br>
 1. For single objective optimization problems, DYCORS(in pySOT) is recommended:
  ```
 from GOArbf.Optimize import Optim
@@ -33,6 +33,7 @@ GOPSoptim.GOPSoptimize(problem)
 from GOArbf.Optimize import MFoptim
 MFoptim.MFoptimize(problem)
 ```
+When you are formulating your optimization problems, you can follow the example tests problems used for each algorithms. For example, if you are using DCYORS, you can refer to pySOT.optimization_problems for example problem formulations.
 ## Citation
 If you use pySOT, please cite the following paper: [David Eriksson, David Bindel, Christine A. Shoemaker. pySOT and POAP: An event-driven asynchronous framework for surrogate optimization. arXiv preprint arXiv:1908.00420, 2019](https://arxiv.org/abs/1908.00420)<br>
 If you use GOMORS, please cite the following paper: [Akhtar, T., Shoemaker, C.A. Multi objective optimization of computationally expensive multi-modal functions with RBF surrogates and multi-rule selection. J Glob Optim 64, 17–32 (2016).](https://doi.org/10.1007/s10898-015-0270-y)<br>
