@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-long_description = open("README.md").read()
+long_description = open("README.rst").read()
 
 setup(
     name="GOArbf",
@@ -12,6 +12,7 @@ setup(
     author_email="zhouxiaoqian@u.nus.edu",
     description="Global Optimization Algorithms with RBF Surrogates",
     long_description=long_description,
+    long_description_content_type='text/x-rst',
     setup_requires=["numpy"],
     install_requires=["pysot"],
     classifiers=[
