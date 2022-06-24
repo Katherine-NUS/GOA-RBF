@@ -1,1 +1,1 @@
-# user-freindly
+# surrogate-optimization
