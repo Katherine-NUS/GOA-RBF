@@ -15,8 +15,8 @@ The table below gives the key features and the reference link for each algorithm
 
 
 ## Installation
-To install the software, you can choose to download the zip file from GitHub or use "python setup.py install" once you cloned the repository.
-*Install GOArbf is through pip is available once it is published:
+To install the software, you can choose to download the zip file from GitHub or use "python setup.py install" once you cloned the repository.<br>
+*Install GOArbf through pip is available once it is published:
 ```
 pip install GOArbf
 ```
