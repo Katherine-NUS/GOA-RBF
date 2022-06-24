@@ -1,6 +1,6 @@
 Developed and maintained by:
 
-Zhou Xiaoqian <isezhxi@nus.edu.sg>
+Zhou Xiaoqian <zhouxiaoqian@u.nus.edu>
 Ilija Ilievski <iseii@nus.edu.sg>
 Christine Shoemaker <shoemaker@nus.edu.sg>
 
