@@ -1,7 +1,7 @@
 # Global Optimization Algorithms with RBF Surrogates (GOA-RBF)
-This repository is a collection of optimization toolboxes for computationally expensive global optimization problems. This toolbox supports multiple surrogate optimization softwares including: Python Surrogate Optimization Toolbox ([pySOT](https://github.com/dme65/pySOT)), Gap Optimized Multi-objective Optimization using Response Surfaces ([GOMORS](https://github.com/drkupi/GOMORS_pySOT)), 𝜀-dominance Many-objective Surrogate-assisted Optimization(𝜀-MaSO),Global Optimization in Parallel with Surrogate ([GOPS](https://github.com/louisXW/GOPS)) and multi-fidelity RBF (radial basis function) surrogate-based optimization (MRSO). All the algorithms supports both continuous and integer variables. There is also a repository which is based on pySOT specifically focused on mixed-integer optimization and machine learning, please refer to [HORD](https://github.com/ilija139/HORD).<br>
+This repository is a collection of optimization toolboxes for computationally expensive global optimization problems. This toolbox supports multiple surrogate optimization softwares including: Python Surrogate Optimization Toolbox ([pySOT](https://github.com/dme65/pySOT)), Gap Optimized Multi-objective Optimization using Response Surfaces ([GOMORS](https://github.com/drkupi/GOMORS_pySOT)), 𝜀-dominance Many-objective Surrogate-assisted Optimization (𝜀-MaSO), Global Optimization in Parallel with Surrogates ([GOPS](https://github.com/louisXW/GOPS)) and multi-fidelity RBF (radial basis function) surrogate-based optimization (MRSO). All the algorithms support both continuous and integer variables. There is also a repository which is based on pySOT specifically focused on mixed-integer optimization and machine learning, please refer to [HORD](https://github.com/ilija139/HORD).<br>
 
-The table below gives the key features and the reference link for each algorithm, for more detailed instruction, please refer to "Running GOArbf" and for full references, please refer to "Citation". The algorithm mentioned below all uses radial basis functions as surrogate models to perform optimization and they perform very well on expensive black-box objdctive functions.
+The table below gives the key features and the reference link for each algorithm, for more detailed instructions, please refer to "Running GOArbf" and for full references, please refer to "Citation". The optimization algorithms mentioned below all use a radial basis function type of surrogate model and they perform very well on expensive black-box objective functions.
 
 | Feature | Algorithm | GitHub Link | Authors | Reference Link |
 | --- | --- | --- | --- | --- |
@@ -21,7 +21,7 @@ To install the software, you can choose to download the zip file from GitHub or 
 pip install GOArbf
 ```
 ## Running GOArbf
-This repository aims to provide fast implementation of optimization algorithms, in the meantime, it also provides many parameters so users can easily adjust the algorithms accordingly. To run this repository, users need first define the optimization problems and choose an optimizer which will return the best solutions and its corresponding function value.The "examples" folder provide sample codes for all the software included and the "GOArbf\Optimize" folder provides the source code for all the optimizers.<br>
+This repository aims to provide fast implementation of optimization algorithms, in the meantime, it also provides many parameters so users can easily adjust the algorithms accordingly. To run this repository, users need to first define the optimization problems and choose an optimizer which will return the best solution and its corresponding function value.The "examples" folder provide sample code for all the software included and the "GOArbf\Optimize" folder provides the source code for all the optimizers.<br>
 1. For single objective optimization problems, DYCORS(in pySOT) is recommended:
  ```
 from GOArbf.Optimize import Optim
@@ -32,7 +32,7 @@ Optim.optimize(problem)
 from GOArbf.Optimize import MOoptim
 MOoptim.MOoptimize(problem)
 ```
-3. For many-objective(more than 3) optimization problems, 𝜀-MaSO is recommended:
+3. For many-objective (more than 3) optimization problems, 𝜀-MaSO is recommended:
 ```
 from GOArbf.Optimize import epsMOoptim
 epsMOoptim.epsMOoptimize(problem)
